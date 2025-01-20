@@ -1,0 +1,57 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+
+   html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    color: black;
+    font-family: Verdana;
+    background-color: #141115;
+    margin: 20px;
+    padding: 0;
+  }
+  
+  span {
+    text-align: center;
+    color: #E0BAD7;
+    margin: 0;
+  }
+
+  .marquee {
+    height: 100px;
+    width: 100%;
+  
+    overflow: hidden;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  
+  .marquee div {
+    display: block;
+    width: 200%;
+    height: 100px;
+
+  
+    position: absolute;
+    overflow: hidden;
+  
+    animation: marquee 10s linear infinite;
+  }
+  
+  .marquee span {
+    float: left;
+    width: 25%;
+    font-size: xx-large;
+  }
+  
+  @keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+  }
